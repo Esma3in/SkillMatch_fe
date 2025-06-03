@@ -59,7 +59,7 @@ export default function ProfileSettings() {
           biography: profile?.description || '',
           photo: null,
           photoPreview: profile?.photoProfil 
-            ? `http://localhost:8000/storage/${profile.photoProfil}` 
+            ? `https://skill-match-be.vercel.app/storage/${profile.photoProfil}` 
             : null,
           socialMedia: {
             facebook: social_media?.facebook || '',

@@ -20,7 +20,7 @@ const TestsList = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/candidate/company/${companyId}/tests?page=${currentPage}`,
+          `https://skill-match-be.vercel.app/api/candidate/company/${companyId}/tests?page=${currentPage}`,
           {
             headers: { Accept: 'application/json' },
           }

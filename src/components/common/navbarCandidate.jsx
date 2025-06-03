@@ -186,7 +186,7 @@ const NavbarCandidate = ({searchedItems}) => {
                 <img 
                   src={
                     candidate?.profile?.photoProfil 
-                      ? `http://localhost:8000/storage/${candidate.profile.photoProfil}` 
+                      ? `https://skill-match-be.vercel.app/storage/${candidate.profile.photoProfil}` 
                       : userAvatar
                   } 
                   alt="User profile" 
@@ -200,7 +200,7 @@ const NavbarCandidate = ({searchedItems}) => {
                     <img 
                       src={
                         candidate?.profile?.photoProfil 
-                          ? `http://localhost:8000/storage/${candidate.profile.photoProfil}` 
+                          ? `https://skill-match-be.vercel.app/storage/${candidate.profile.photoProfil}` 
                           : userAvatar
                       } 
                       alt="User profile" 

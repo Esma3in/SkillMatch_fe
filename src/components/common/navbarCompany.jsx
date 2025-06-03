@@ -161,7 +161,7 @@ const NavbarCompany = () => {
                 <img 
                   src={
                     company?.logo 
-                      ? `http://localhost:8000/storage/${company.logo}` 
+                      ? `https://skill-match-be.vercel.app/storage/${company.logo}` 
                       : userAvatar
                   } 
                   alt="Company profile" 
@@ -175,7 +175,7 @@ const NavbarCompany = () => {
                     <img 
                       src={
                         company?.logo 
-                          ? `http://localhost:8000/storage/${company.logo}` 
+                          ? `https://skill-match-be.vercel.app/storage/${company.logo}` 
                           : userAvatar
                       } 
                       alt="Company profile" 

@@ -14,12 +14,12 @@ const SeriesChallenge = () => {
     const fetchChallengeAndProblems = async () => {
       setLoading(true);
       try {
-        const challengeResponse = await axios.get(`http://localhost:8000/api/challenges/${challengeId}`, {
+        const challengeResponse = await axios.get(`https://skill-match-be.vercel.app/api/challenges/${challengeId}`, {
           headers: { Accept: "application/json" },
         });
         setChallenge(challengeResponse.data);
 
-        const problemsResponse = await axios.get(`http://localhost:8000/api/challenges/${challengeId}/problems`, {
+        const problemsResponse = await axios.get(`https://skill-match-be.vercel.app/api/challenges/${challengeId}/problems`, {
           headers: { Accept: "application/json" },
         });
         setProblems(problemsResponse.data);

@@ -42,7 +42,7 @@ export default function CandidateProfileForCompany() {
   const handleDownloadCV = async (id) => {
     try {
       await api.get("/api/sanctum/csrf-cookie", { withCredentials: true });
-      window.open(`http://localhost:8000/api/candidate/CV/${id}`, "_blank");
+      window.open(`https://skill-match-be.vercel.app/api/candidate/CV/${id}`, "_blank");
     } catch (error) {
       console.error("Error fetching CV:", error);
     }
@@ -104,7 +104,7 @@ export default function CandidateProfileForCompany() {
                   alt="User profile"
                   src={
                     photoProfil
-                      ? `http://localhost:8000/storage/${photoProfil}`
+                      ? `https://skill-match-be.vercel.app/storage/${photoProfil}`
                       : "/assets/default-avatar.png"
                   }
                 />

@@ -19,7 +19,7 @@ const ProblemsList = () => {
     const fetchProblems = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:8000/api/problems?page=${currentPage}`, {
+        const response = await axios.get(`https://skill-match-be.vercel.app/api/problems?page=${currentPage}`, {
           headers: { Accept: "application/json" },
         });
 

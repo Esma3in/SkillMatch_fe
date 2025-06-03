@@ -463,7 +463,7 @@ export const CompanyProfile = () => {
         logo: companyInfo?.logo // Check if logo exists
             ? (companyInfo.logo.startsWith('http://') || companyInfo.logo.startsWith('https://') // Check if it's already a full URL
                 ? companyInfo.logo // If it is, use it as is
-                : `http://localhost:8000/storage/${companyInfo.logo}` // If not (and exists), prepend the storage base URL
+                : `https://skill-match-be.vercel.app/storage/${companyInfo.logo}` // If not (and exists), prepend the storage base URL
             )
             : null,
         creationDate: companyInfo?.profile?.DateCreation || 'N/A',

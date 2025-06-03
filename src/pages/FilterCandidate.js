@@ -223,7 +223,7 @@ const CandidateFilter = () => {
   // If the resumeUrl is a relative path, you might need to prepend your base URL
   const fullUrl = resumeUrl.startsWith('http') 
     ? resumeUrl 
-    : `${process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000'}/storage/${resumeUrl}`;
+    : `${process.env.REACT_APP_API_BASE_URL || 'https://skill-match-be.vercel.app'}/storage/${resumeUrl}`;
 
   // Open the resume in a new window/tab
   window.open(fullUrl, '_blank', 'noopener,noreferrer');

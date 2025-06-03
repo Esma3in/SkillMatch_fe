@@ -44,7 +44,7 @@ api.interceptors.response.use(
       if (error.response.status === 419) {
         // CSRF token mismatch - get a fresh token
         try {
-          await axios.get('http://localhost:8000/api/sanctum/csrf-cookie');
+          await axios.get('https://skill-match-be.vercel.app/api/sanctum/csrf-cookie');
           // Retry the original request
           return api(error.config);
         } catch (e) {
