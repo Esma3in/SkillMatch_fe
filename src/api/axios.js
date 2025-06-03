@@ -3,6 +3,7 @@ import axios from 'axios';
 // Create axios instance with default config
 const api = axios.create({
   baseURL: 'https://skill-match-be.vercel.app/api',
+  withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
